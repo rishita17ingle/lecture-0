@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Welcome</title>
-</head>
-<body>
-Hello world!
-</body>
+ <head>
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="hello.css">
+  <h1>All About COVID-19</h1>
+  <h3>Coronavirus disease (COVID-19) is an infectious disease caused by a newly    discovered coronavirus.The best way to prevent and slow down transmission is be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. </h3>
+ <h4>FAQ's</h4>
+ </head>
+ <body>
+  <button type="button" class="collapsible">How does the COVID-19 virus spread?</button>
+  <div class="content">
+  <p>People can catch COVID-19 from others who have the virus. The disease spreads primarily from person to person through small droplets from the nose or mouth, which are expelled when a person with COVID-19 coughs, sneezes, or speaks. People can catch COVID-19 if they breathe in these droplets from a person infected with the virus.</p>
+ </div>
+
+
+  <button type="button" class="collapsible">Is it neccessary to cover your mouth all the time?</button>
+ <div class="content">
+ <p>You need to cover your mouth, if you have any symptoms. Also if you are going outside the house, make sure you cover yor mouth with any cloth or mask to prevent infection from droplets.</p>
+</div>
+
+
+  <button type="button" class="collapsible">Can the virus spread through fruits and vegetables?</button>
+<div class="content">
+<p>No, but after buying fruits you should wash them with clean water and wash your hands with soap. If they are to be consumed raw, make sure to wash them twice.</p>
+</div>
+
+
+  <button type="button" class="collapsible">What to do if you have symptoms like flu?</button>
+<div class="content">
+<p>f you have minor symptoms, such as a slight cough or a mild fever, there is generally no need to seek medical care. Stay at home, self-isolate and monitor your symptoms. Follow national guidance on self-isolation.Seek immediate medical care if you have difficulty breathing or pain/pressure in the chest. If possible, call your health care provider in advance, so he/she can direct you to the right health facility.</p>
+ </div>
+
+<h2> Stay Home, Stay Safe</h2>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+ </body>
 </html>
