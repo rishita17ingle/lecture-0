@@ -1,0 +1,51 @@
+h1{
+ background-color:#DAF7A6;
+ text-align:center;
+ height:55px;
+ padding:20px;
+ font-family: Arial,sans-serif;
+ font-weight: bold;
+ font-size:40px;
+ border: 4px groove black;
+}
+h3{
+ font-size: 40px;
+ font-weight: normal;
+ color: white;
+}
+h4{
+ font-size: 35px;
+ font-weight: bold;
+color: white;
+}
+.collapsible{
+ background-color: #DAF7A6;
+ padding: 18px;
+width: 100%;
+text-align:left; 
+ font-weight: normal;
+ font-size: 25px;
+ cursor: pointer;
+}
+.active, .collapsible:hover {
+ background-color: #AAD262 ;
+}
+.content {
+ padding: 0 18px;
+ display: none;
+ overflow: hidden;
+ background-color: black;
+ font-size: 20px;
+}
+h2{
+ color:white;
+ text-align: center;
+ font-size: 50px;
+ border: 2px solid white;
+}
+body{
+ background-color: black;
+}
+p{
+ color: white;
+}
